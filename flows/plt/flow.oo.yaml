@@ -32,36 +32,6 @@ nodes:
         value: life expectancy
       - handle: color
         value: rgb(245, 120, 240)
-  - task: self::read_csv_to_df
-    node_id: read_csv_to_df#1
-    inputs_from:
-      - handle: csv
-        value: /oomol-storage/table/income.csv
-  - task: self::column_number_sort
-    node_id: column_number_sort#1
-    inputs_from:
-      - handle: df
-        value: ""
-        from_node:
-          - node_id: read_csv_to_df#1
-            output_handle: df
-      - handle: column_name
-        value: income
-      - handle: sort_type
-        value: Descending
-  - task: self::column_number_filter
-    node_id: column_number_filter#1
-    inputs_from:
-      - handle: column_name
-        value: income
-      - handle: df
-        from_node:
-          - node_id: column_number_sort#1
-            output_handle: df
-      - handle: min_threshold
-        value: 10000
-      - handle: max_threshold
-        value: 100000000
   - task: self::df_save_as_csv
     node_id: df_save_as_csv#1
     inputs_from:
@@ -69,11 +39,11 @@ nodes:
         from_node:
           - node_id: column_number_filter#1
             output_handle: df
-      - handle: df
-        from_node:
-          - node_id: column_number_filter#1
-            output_handle: df
       - handle: csv_address
         value: /oomol-storage/table
       - handle: name
         value: "7777"
+      - handle: df
+        from_node:
+          - node_id: plot_bar_chart#3
+            output_handle: df

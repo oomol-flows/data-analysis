@@ -3,4 +3,5 @@ container:
   scripts:
     # Script executed when the container is first loaded
     # eg: bootstrap: pip install pandas
-    bootstrap: echo 'bootstrap executed'
+    bootstrap: |
+      pnpm install && pip install --user -r requirements.txt
