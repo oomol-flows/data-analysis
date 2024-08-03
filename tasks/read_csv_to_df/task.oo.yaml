@@ -1,0 +1,23 @@
+inputs_def:
+  - handle: csv
+    description: Input
+    json_schema:
+      type: string
+      ui:widget: file
+      contentMediaType: oomol/var
+    value: ""
+outputs_def:
+  - handle: df
+    description: Output
+    json_schema:
+      contentMediaType: oomol/var
+      type:
+        - string
+icon: https://api.iconify.design/logos:python.svg?color=%23888888
+ui:
+  default_width: 350
+executor:
+  name: python
+  options:
+    spawn: false
+    entry: main.py

@@ -1,0 +1,24 @@
+type: task_block
+title: ReadFile
+executor:
+  name: python_executor
+  entry: __init__.py
+inputs_def:
+  - handle: csv
+    json_schema:
+      type: string
+      ui:widget: file
+outputs_def:
+  - handle: df
+    json_schema:
+      contentMediaType: oomol/var
+      type:
+        - string
+        - number
+        - integer
+        - boolean
+        - object
+        - array
+        - "null"
+      ui:widget: any
+render: ./oo-render/dist/render.mjs

@@ -1,0 +1,47 @@
+inputs_def:
+  - handle: df
+    json_schema:
+      type:
+        - string
+        - number
+        - integer
+        - boolean
+        - object
+        - array
+        - "null"
+      contentMediaType: oomol/var
+  - handle: column_name
+    description: Input
+    json_schema:
+      contentMediaType: oomol/var
+      type: string
+    value: ""
+  - handle: min_threshold
+    json_schema:
+      contentMediaType: oomol/var
+      type: number
+  - handle: max_threshold
+    json_schema:
+      contentMediaType: oomol/var
+      type: number
+outputs_def:
+  - handle: df
+    description: Output
+    json_schema:
+      contentMediaType: oomol/var
+      type:
+        - string
+        - number
+        - integer
+        - boolean
+        - object
+        - array
+        - "null"
+icon: https://api.iconify.design/logos:python.svg?color=%23888888
+ui:
+  default_width: 530
+executor:
+  name: python
+  options:
+    spawn: false
+    entry: main.py

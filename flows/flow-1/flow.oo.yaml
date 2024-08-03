@@ -1,0 +1,43 @@
+nodes:
+  - task: self::read_csv_to_df
+    node_id: read_csv_to_df#1
+    inputs_from:
+      - handle: csv
+        value: /oomol-storage/table/all_fast_team_with_bill.csv
+  - task: self::delete _column_by_name
+    node_id: delete _column_by_name#1
+    inputs_from:
+      - handle: df
+        from_node:
+          - node_id: read_csv_to_df#1
+            output_handle: df
+      - handle: colum_name
+        value: "0"
+      - handle: column_name
+        value: "0"
+  - task: self::column_number_filter
+    node_id: column_number_filter#1
+    inputs_from:
+      - handle: df
+        from_node:
+          - node_id: delete _column_by_name#1
+            output_handle: df
+      - handle: column_name
+        value: lastestThirtyDays
+      - handle: threshold
+        value: 100000
+      - handle: min_threshold
+        value: 1000
+      - handle: max_threshold
+        value: 200000
+  - task: self::column_number_sort
+    node_id: column_number_sort#1
+    inputs_from:
+      - handle: df
+        from_node:
+          - node_id: column_number_filter#1
+            output_handle: df
+      - handle: column_name
+        value: lastestThirtyDays
+      - handle: sort_type
+        value: Descending

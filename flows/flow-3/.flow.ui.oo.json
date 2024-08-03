@@ -1,0 +1,92 @@
+{
+  "nodes": [
+    {
+      "id": "read_csv_to_df#1",
+      "contentWidth": 200,
+      "selected": false,
+      "dragging": false,
+      "position": {
+        "x": 468.103515625,
+        "y": 290
+      },
+      "positionAbsolute": {
+        "x": 468.103515625,
+        "y": 292
+      },
+      "width": 214,
+      "height": 92
+    },
+    {
+      "id": "delete _column_by_name#2",
+      "contentWidth": 200,
+      "selected": false,
+      "dragging": false,
+      "position": {
+        "x": 766,
+        "y": 290
+      },
+      "positionAbsolute": {
+        "x": 766,
+        "y": 287
+      },
+      "width": 214,
+      "height": 120
+    },
+    {
+      "id": "column_number_sort#1",
+      "contentWidth": 200,
+      "selected": true,
+      "dragging": false,
+      "position": {
+        "x": 1063.5,
+        "y": 290
+      },
+      "positionAbsolute": {
+        "x": 1063.5,
+        "y": 290
+      },
+      "width": 214,
+      "height": 148
+    }
+  ],
+  "edges": [
+    {
+      "id": "9f684f55-2d7f-4e85-bab5-9d32f23acbfd",
+      "connection": {
+        "from": {
+          "type": "from_node",
+          "source": {
+            "node_id": "read_csv_to_df#1",
+            "output_handle": "df"
+          }
+        },
+        "to": {
+          "type": "to_node",
+          "target": {
+            "node_id": "delete _column_by_name#2",
+            "input_handle": "df"
+          }
+        }
+      }
+    },
+    {
+      "id": "684f552d-7f7e-457a-b59d-32f23acbfdd7",
+      "connection": {
+        "from": {
+          "type": "from_node",
+          "source": {
+            "node_id": "delete _column_by_name#2",
+            "output_handle": "df"
+          }
+        },
+        "to": {
+          "type": "to_node",
+          "target": {
+            "node_id": "column_number_sort#1",
+            "input_handle": "df"
+          }
+        }
+      }
+    }
+  ]
+}
