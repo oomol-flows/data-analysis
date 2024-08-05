@@ -17,7 +17,7 @@ kiwisolver==1.4.5
 matplotlib==3.9.1
 mccabe==0.7.0
 numpy==2.0.1
-oocana @ file:///home/ovm/.nvm/versions/node/v20.15.1/lib/node_modules/%40oomol/python-sdk/dist/oocana-0.11.8-py3-none-any.whl#sha256=b167b8a0f6653e5a9c318ab69a4dd6900280f66e3c91fc4926d236cccc5aebbc
+oocana @ file:///home/ovm/.nvm/versions/node/v20.15.1/lib/node_modules/%40oomol/python-sdk/dist/oocana-0.11.9-py3-none-any.whl#sha256=b167b8a0f6653e5a9c318ab69a4dd6900280f66e3c91fc4926d236cccc5aebbc
 openai==1.17.1
 openpyxl==3.1.0
 packaging==24.1
