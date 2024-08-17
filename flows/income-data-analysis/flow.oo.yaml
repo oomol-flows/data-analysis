@@ -4,6 +4,9 @@ nodes:
     inputs_from:
       - handle: csv
         value: /oomol-storage/table/income.csv
+        from_node:
+          - node_id: download_file_to_address#1
+            output_handle: file_address
   - task: self::column_number_filter
     node_id: column_number_filter#2
     inputs_from:
@@ -40,10 +43,19 @@ nodes:
           - node_id: column_number_filter#1
             output_handle: df
       - handle: csv_address
-        value: /oomol-storage/table
+        value: /oomol-storage
       - handle: name
         value: "7777"
       - handle: df
         from_node:
           - node_id: plot_bar_chart#3
             output_handle: df
+  - task: self::download_file_to_address
+    node_id: download_file_to_address#1
+    inputs_from:
+      - handle: online_url
+        value: "https://oomol-flows.oss-cn-hangzhou.aliyuncs.com/1723901984_income.csv"
+      - handle: file_name
+        value: oomol_income.csv
+      - handle: folder
+        value: /oomol-storage

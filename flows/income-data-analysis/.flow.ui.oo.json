@@ -13,8 +13,8 @@
         "x": -595.6567786295983,
         "y": 222.66541128613073
       },
-      "width": 431,
-      "height": 92
+      "width": 429,
+      "height": 96
     },
     {
       "id": "column_number_filter#2",
@@ -29,8 +29,8 @@
         "x": -191.8796890589034,
         "y": 223.99339088530257
       },
-      "width": 481,
-      "height": 176
+      "width": 479,
+      "height": 180
     },
     {
       "id": "plot_bar_chart#3",
@@ -45,8 +45,8 @@
         "x": 326.23961692084447,
         "y": 220.60577863173586
       },
-      "width": 801,
-      "height": 204
+      "width": 799,
+      "height": 208
     },
     {
       "id": "df_save_as_csv#1",
@@ -61,11 +61,50 @@
         "x": 1159.2814849016377,
         "y": 222.57617900716366
       },
-      "width": 544,
-      "height": 148
+      "width": 542,
+      "height": 152
+    },
+    {
+      "id": "download_file_to_address#1",
+      "contentWidth": 530,
+      "selected": false,
+      "dragging": false,
+      "position": {
+        "x": -1259.414757544759,
+        "y": 208.24344598733654
+      },
+      "positionAbsolute": {
+        "x": -1259.414757544759,
+        "y": 208.24344598733654
+      },
+      "width": 542,
+      "height": 152
     }
   ],
   "edges": [
+    {
+      "id": "d8bdec75-42d4-4c1f-8ef7-5de390b26724",
+      "connection": {
+        "from": {
+          "type": "from_node",
+          "source": {
+            "node_id": "download_file_to_address#1",
+            "output_handle": "file_address"
+          }
+        },
+        "to": {
+          "type": "to_node",
+          "target": {
+            "node_id": "read_csv_to_df#3",
+            "input_handle": "csv"
+          }
+        }
+      },
+      "gradientColor": [
+        "var(--edge-python)",
+        "var(--edge-python)"
+      ]
+    },
     {
       "id": "2252d854-e199-4714-bce6-dc242bd6dc96",
       "connection": {
@@ -83,7 +122,11 @@
             "input_handle": "df"
           }
         }
-      }
+      },
+      "gradientColor": [
+        "var(--edge-python)",
+        "var(--edge-python)"
+      ]
     },
     {
       "id": "52d854e1-9967-447c-a6dc-242bd6dc9646",
@@ -102,7 +145,11 @@
             "input_handle": "df"
           }
         }
-      }
+      },
+      "gradientColor": [
+        "var(--edge-python)",
+        "var(--edge-python)"
+      ]
     },
     {
       "id": "59794e34-f977-4179-a590-fc7ec4d18e57",
@@ -121,7 +168,11 @@
             "input_handle": "df"
           }
         }
-      }
+      },
+      "gradientColor": [
+        "var(--edge-python)",
+        "var(--edge-python)"
+      ]
     }
   ]
 }
