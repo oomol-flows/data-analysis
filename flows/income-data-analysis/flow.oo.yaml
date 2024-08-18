@@ -45,7 +45,7 @@ nodes:
       - handle: csv_address
         value: /oomol-storage
       - handle: name
-        value: "7777"
+        value: "new_income.csv"
       - handle: df
         from_node:
           - node_id: plot_bar_chart#3

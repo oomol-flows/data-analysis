@@ -3,18 +3,18 @@
     {
       "id": "read_csv_to_df#3",
       "contentWidth": 417.14076878223517,
-      "selected": false,
+      "selected": true,
       "dragging": false,
       "position": {
         "x": -662.7975474118334,
         "y": 222.66541128613073
       },
       "positionAbsolute": {
-        "x": -595.6567786295983,
-        "y": 222.66541128613073
+        "x": -662.7975474118334,
+        "y": 224.66541128613073
       },
       "width": 429,
-      "height": 96
+      "height": 608
     },
     {
       "id": "column_number_filter#2",
@@ -30,7 +30,7 @@
         "y": 223.99339088530257
       },
       "width": 479,
-      "height": 180
+      "height": 575
     },
     {
       "id": "plot_bar_chart#3",
@@ -46,7 +46,7 @@
         "y": 220.60577863173586
       },
       "width": 799,
-      "height": 208
+      "height": 693
     },
     {
       "id": "df_save_as_csv#1",
@@ -62,7 +62,7 @@
         "y": 222.57617900716366
       },
       "width": 542,
-      "height": 152
+      "height": 547
     },
     {
       "id": "download_file_to_address#1",
@@ -71,11 +71,11 @@
       "dragging": false,
       "position": {
         "x": -1259.414757544759,
-        "y": 208.24344598733654
+        "y": 222.66541128613073
       },
       "positionAbsolute": {
         "x": -1259.414757544759,
-        "y": 208.24344598733654
+        "y": 228.24344598733654
       },
       "width": 542,
       "height": 152
