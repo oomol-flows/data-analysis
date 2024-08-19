@@ -14,7 +14,7 @@
         "y": 224.66541128613073
       },
       "width": 429,
-      "height": 608
+      "height": 96
     },
     {
       "id": "column_number_filter#2",
@@ -30,7 +30,7 @@
         "y": 223.99339088530257
       },
       "width": 479,
-      "height": 575
+      "height": 180
     },
     {
       "id": "plot_bar_chart#3",
@@ -46,7 +46,7 @@
         "y": 220.60577863173586
       },
       "width": 799,
-      "height": 693
+      "height": 208
     },
     {
       "id": "df_save_as_csv#1",
@@ -62,7 +62,7 @@
         "y": 222.57617900716366
       },
       "width": 542,
-      "height": 547
+      "height": 152
     },
     {
       "id": "download_file_to_address#1",
