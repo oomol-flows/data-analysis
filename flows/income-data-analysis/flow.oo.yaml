@@ -5,8 +5,8 @@ nodes:
       - handle: csv
         value: /oomol-storage/table/income.csv
         from_node:
-          - node_id: download_file_to_address#1
-            output_handle: file_address
+          - node_id: download_file#1
+            output_handle: file_path
   - task: self::column_number_filter
     node_id: column_number_filter#2
     inputs_from:
@@ -34,7 +34,7 @@ nodes:
       - handle: y_column
         value: life expectancy
       - handle: color
-        value: rgb(245, 120, 240)
+        value: "#ed56e8"
   - task: self::df_save_as_csv
     node_id: df_save_as_csv#1
     inputs_from:
@@ -50,11 +50,12 @@ nodes:
         from_node:
           - node_id: plot_bar_chart#3
             output_handle: df
-  - task: self::download_file_to_address
-    node_id: download_file_to_address#1
+  - task: tools::download_file
+    title: "Download File #1"
+    node_id: download_file#1
     inputs_from:
-      - handle: online_url
-        value: "https://oomol-flows.oss-cn-hangzhou.aliyuncs.com/1723901984_income.csv"
+      - handle: url
+        value: https://oomol-flows.oss-cn-hangzhou.aliyuncs.com/1723901984_income.csv
       - handle: file_name
         value: oomol_income.csv
       - handle: folder

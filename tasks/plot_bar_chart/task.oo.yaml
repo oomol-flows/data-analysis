@@ -28,7 +28,8 @@ inputs_def:
       type: string
       ui:widget: color
       ui:options:
-        colorType: RGB
+        colorType: HEX
+    value: "#3336c5"
 outputs_def:
   - handle: df
     description: Output
