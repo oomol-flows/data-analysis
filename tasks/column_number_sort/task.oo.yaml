@@ -36,7 +36,7 @@ outputs_def:
         - object
         - array
         - "null"
-icon: https://api.iconify.design/logos:python.svg?color=%23888888
+icon: ":fa6-solid:arrow-down-wide-short:currentColor:"
 ui:
   default_width: 530
 executor:
