@@ -14,12 +14,10 @@ inputs_def:
     value: ""
   - handle: csv_address
     json_schema:
-      contentMediaType: oomol/var
       type: string
       ui:widget: dir
   - handle: name
     json_schema:
-      contentMediaType: oomol/var
       type: string
 outputs_def:
   - handle: df

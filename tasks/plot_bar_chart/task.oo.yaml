@@ -12,19 +12,15 @@ inputs_def:
       contentMediaType: oomol/var
   - handle: title
     json_schema:
-      contentMediaType: oomol/var
       type: string
   - handle: x_column
     json_schema:
-      contentMediaType: oomol/var
       type: string
   - handle: y_column
     json_schema:
-      contentMediaType: oomol/var
       type: string
   - handle: color
     json_schema:
-      contentMediaType: oomol/var
       type: string
       ui:widget: color
       ui:options:
