@@ -5,10 +5,10 @@
   },
   "designer/flow/income-data-analysis": {
     "viewport": {
-      "x": 908.781723480354,
-      "y": -4.640437997835306,
-      "zoom": 0.6113988856758181
+      "x": 234.7848134251442,
+      "y": -18.60130264558211,
+      "zoom": 0.5027656688575661
     }
   },
-  "designer/flow/test": {}
+  "sharedBlockExplorerInit": false
 }

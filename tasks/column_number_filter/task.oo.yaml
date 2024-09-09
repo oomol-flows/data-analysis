@@ -13,16 +13,13 @@ inputs_def:
   - handle: column_name
     description: Input
     json_schema:
-      contentMediaType: oomol/var
       type: string
     value: ""
   - handle: min_threshold
     json_schema:
-      contentMediaType: oomol/var
       type: number
   - handle: max_threshold
     json_schema:
-      contentMediaType: oomol/var
       type: number
 outputs_def:
   - handle: df

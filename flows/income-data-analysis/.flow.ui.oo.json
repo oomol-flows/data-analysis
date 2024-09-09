@@ -2,7 +2,7 @@
   "nodes": [
     {
       "id": "read_csv_to_df#3",
-      "contentWidth": 417.14076878223517,
+      "contentWidth": 420.17461296750974,
       "selected": false,
       "dragging": false,
       "position": {
@@ -13,8 +13,8 @@
         "x": -662.7975474118334,
         "y": 224.66541128613073
       },
-      "width": 431,
-      "height": 604
+      "width": 434,
+      "height": 803
     },
     {
       "id": "column_number_filter#2",
@@ -30,12 +30,12 @@
         "y": 223.99339088530257
       },
       "width": 481,
-      "height": 571
+      "height": 893
     },
     {
       "id": "plot_bar_chart#3",
       "contentWidth": 787.2873763923401,
-      "selected": false,
+      "selected": true,
       "dragging": false,
       "position": {
         "x": 326.23961692084447,
@@ -46,7 +46,7 @@
         "y": 220.60577863173586
       },
       "width": 801,
-      "height": 694
+      "height": 880
     },
     {
       "id": "df_save_as_csv#1",
@@ -62,34 +62,34 @@
         "y": 222.57617900716366
       },
       "width": 544,
-      "height": 543
+      "height": 863
     },
     {
       "id": "download_file#1",
       "contentWidth": 350.15516277519185,
-      "selected": true,
+      "selected": false,
       "dragging": false,
       "position": {
-        "x": -1140.918771576256,
-        "y": 231.08212637106288
+        "x": -1197.8350104461624,
+        "y": 222.66541128613073
       },
       "positionAbsolute": {
-        "x": -1140.918771576256,
-        "y": 231.08212637106288
+        "x": -1197.8350104461624,
+        "y": 224.18318832622572
       },
-      "width": 364,
-      "height": 152
+      "width": 434,
+      "height": 317
     }
   ],
   "edges": [
     {
-      "id": "d8bdec75-42d4-4c1f-8ef7-5de390b26724",
+      "id": "06bfd429-6012-433a-991a-d9618613269d",
       "connection": {
         "from": {
           "type": "from_node",
           "source": {
-            "node_id": "download_file_to_address#1",
-            "output_handle": "file_address"
+            "node_id": "download_file#1",
+            "output_handle": "file_path"
           }
         },
         "to": {
@@ -101,7 +101,7 @@
         }
       },
       "gradientColor": [
-        "var(--edge-python)",
+        "var(--edge-json)",
         "var(--edge-python)"
       ]
     },
