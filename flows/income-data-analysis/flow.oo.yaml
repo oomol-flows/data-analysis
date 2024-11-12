@@ -43,7 +43,7 @@ nodes:
           - node_id: column_number_filter#1
             output_handle: df
       - handle: csv_address
-        value: /oomol-storage
+        value: /oomol-driver/oomol-storage
       - handle: df
         from_node:
           - node_id: plot_bar_chart#3
@@ -59,4 +59,4 @@ nodes:
       - handle: file_name
         value: oomol_income.csv
       - handle: folder
-        value: /oomol-storage
+        value: /oomol-driver/oomol-storage
