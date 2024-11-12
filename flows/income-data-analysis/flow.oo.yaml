@@ -30,7 +30,7 @@ nodes:
       - handle: y_column
         value: life expectancy
       - handle: color
-        value: "#e362da"
+        value: "#62b0e3"
       - handle: title
         value: country & life expectancy
       - handle: x_column
